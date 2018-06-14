@@ -10,7 +10,7 @@ export class HeaderComponent {
     @Output() featureSelected = new EventEmitter<string>();
 
 
-    selectFeatures(feature:string){
+    selectFeature(feature:string){
         //we  need pass feature to appp component here
         this.featureSelected.emit(feature);
     }
