@@ -19,9 +19,16 @@ export class RecipeListComponent implements OnInit {
     'https://www.inspiredtaste.net/wp-content/uploads/2012/02/Easy-Chicken-Ragu-1200.jpg')
   ];
 
+  selectedRecipe:Recipe;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onRecipeSelected(recipe:Recipe){
+    this.selectedRecipe = recipe;
+
   }
 
 }
